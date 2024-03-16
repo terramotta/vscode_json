@@ -1,39 +1,84 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "C++ Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "/mnt/c/Users/g-pac.MACONDO/Desktop/Projetos/WindowsProject/bin/main",
-            "args": [
-                "-fThreading"
-            ],
-            "stopAtEntry": false,
-            "cwd": "/mnt/c/Users/g-pac.MACONDO/Desktop/Projetos/WindowsProject/",
-            "environment": [],
-            "externalConsole": true,
-            "windows": {
-                "MIMode": "gdb",
-                "setupCommands": [
-                    {
-                        "description": "Enable pretty-printing for gdb",
-                        "text": "-enable-pretty-printing",
-                        "ignoreFailures": true
-                    }
-                ]
-            },
-            "pipeTransport": {
-                "pipeCwd": "",
-                "pipeProgram": "c:\\Windows\\System32\\bash.exe",
-                "pipeArgs": [
-                    "-c"
-                ],
-                "debuggerPath": "/usr/bin/gdb"
-            },
-            "sourceFileMap": {
-                "/mnt/c": "C:\\"
-            }
-        }
-    ]
+    "explorer.confirmDragAndDrop": false,
+    "json.schemas": [],
+
+    // Configurações do Python e Pylint
+    "editor.inlineSuggest.enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--disable=missing-docstring",  // Desabilita o aviso de falta de docstrings
+        "--max-line-length=120"
+    ],
+
+    // Configurações do terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.cursorStyle": "line",
+
+    // Configurações de View e Layout
+    "symbols.hidesExplorerArrows": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.defaultPath": "C:\\dev",
+    "window.commandCenter": false,
+    "window.titleBarStyle": "custom",
+    "editor.cursorSmoothCaretAnimation": "on",
+
+    // Tema e ícones
+    "workbench.colorTheme": "Min Light",
+    "workbench.iconTheme": "symbols",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "editor.rulers": [
+        90, // Define uma guia de recuo em 80 caracteres
+        120 // Define uma segunda guia de recuo em 120 caracteres
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderLineHighlight": "gutter",
+    "editor.fontLigatures": true,
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "editor.semanticHighlighting.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "workbench.statusBar.visible": true,
+
+    // Configurações do plugin APC
+    "apc.electron": {
+        "titleBarStyle": "hiddenInset",
+        "frame": false
+    },
+    "apc.header": {
+        "height": 36
+    },
+    "apc.listRow": {
+        "height": 24
+    },
+    "apc.font.family": "Inter",
+    
+    "apc.stylesheet": {
+        ".title-label > h2": "display: none",
+        ".editor-actions": "display: none",
+        ".pane-body": "padding: 8px",
+        ".pane-header": "padding: 0 8px",
+        ".split-view-view:first-child .paneheader": "display: none !important;",
+        ".monaco-list-row": "border-radius: 4px;",
+        "monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"       
+    },
+    "security.workspace.trust.startupPrompt": "never",
+    "inlineChat.accessibleDiffView": "on",
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "task.saveBeforeRun": "prompt",
+    "python.experiments.enabled": false,
 }
